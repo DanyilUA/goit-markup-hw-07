@@ -333,6 +333,12 @@ line-height: 1.5;
 color: var(--text-color);
 }
 
+/* ==================CUSTOMERS */
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
 /* ===================foooooooter */
 .footer {
     background-color: var(--bg-zagolowok);
