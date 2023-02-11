@@ -135,12 +135,29 @@ color: var(--text-color);
 .address-link:focus {
 color: var(--btn-color); 
 }
-/* ==============ZAGOLOWOK  stuidio*/
+/* ==============HERO - ZAGOLOWOK  stuidio*/
 .hero-studio {
     background-color: var(--bg-zagolowok); 
     padding-top: 188px;
     padding-bottom: 188px;
 }
+.hero-studio {
+    background-color: #2E2F42;
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( 
+    to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+),
+url(../images/background/people-office.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* ===================knopki spisok portfolio */
 
 .hero-portfolio {
@@ -202,8 +219,8 @@ border: none;
 }
 .hero-btn-order:hover,
 .hero-btn-order:focus {
-/* background-color: var(--btn-bg-color);
-color: var(--btn-text-color); */
+background-color: var(--btn-bg-color);
+color: var(--btn-text-color);
 }
 
 .hero-btn {
@@ -228,7 +245,7 @@ cursor: pointer;
 background: var(--btn-color);
 color: var(--btn-text-secondary-color);
 }
-/* ================text studio */
+/* ================OUR FEATURES / TEXT STUDIO */
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -247,6 +264,21 @@ color: var(--btn-text-secondary-color);
 .hero-item-text {
     margin-top: 8px;
 }
+
+.hero-title-description {
+margin-top: 8px;
+}
+.features-icon {
+    fill: #2E2F42;
+}
+
+.thumb {
+    background: var(--btn-bg-color);
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+}
+
 /* ======================ZAGOLOWOKi */
 .gallery-team {
 font-weight: 700;   
@@ -333,10 +365,28 @@ line-height: 1.5;
 color: var(--text-color);
 }
 
-/* ==================CUSTOMERS */
+/* ====================CUSTOMERS */
 .customers {
     padding-top: 130px;
     padding-bottom: 120px;
+}
+.customer-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.customer-button {
+    width: 168px;
+    height: 88px;
+    background-color: var(--primary-bg-color);
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customer-icon {
+    fill: #8E8F99;
 }
 
 /* ===================foooooooter */
@@ -346,7 +396,8 @@ color: var(--text-color);
 .footer .container {
     padding-top: 100px;
     padding-bottom: 100px;
-    align-items: center;
+    display: flex;
+    gap: 120px;
 }
 
 .footer-text {
@@ -355,4 +406,26 @@ max-width: 264px;
 font-size: 16px;
 line-height: 1.5;
 color:var(--text-footer-color);
+}
+.footer-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--btn-text-secondary-color);
+}
+
+.social-media-list {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-media-button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: none;
+}
+.social-media-icon {
+    fill: #FFFFFF;
 }
