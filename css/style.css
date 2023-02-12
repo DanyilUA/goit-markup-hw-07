@@ -343,21 +343,21 @@ text-align: center
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.hero-list-team .social-media-button {
+.hero-list-team .social-media-link {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--btn-color);
     cursor: pointer;
 }
-.hero-list-team .social-media-button:hover,
-.hero-list-team .social-media-button:focus {
-    background-color: var(--btn-bg-color);
-    border: 1px solid #4D5AE5;
+.hero-list-team .social-media-link:hover,
+.hero-list-team .social-media-link:focus {
+    background-color: #404BBF;
 }
 
-.hero-list-team .social-media-button:is(:hover, :focus) .social-media-icon {
-fill: var(--btn-text-color);
+
+.hero-list-team .social-media-link:is(:hover, :focus) .social-media-icon {
+fill: var(--btn-bg-color);
 }
 
 .gallery-team-wrap .social-media-list {
@@ -391,10 +391,15 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--text-color);
 }
-.hero-portfolio-list .hero-item:hover {
+.hero-item .hero-item-img:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.hero-item-img {
+display: block;
+text-decoration: none;
 }
 
 /* ====================CUSTOMERS */
@@ -408,13 +413,25 @@ color: var(--text-color);
     margin-top: 72px;
 }
 
-.customer-button {
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 168px;
     height: 88px;
     background-color: var(--primary-bg-color);
     border: 1px solid #8E8F99;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.customer-link:focus,
+.customer-link:hover {
+    border-color: var(--btn-text-color);
+}
+
+.customer-link:is(:hover, :focus) .customer-icon {
+    fill: var(--btn-text-color);
 }
 
 .customer-icon {
@@ -454,7 +471,7 @@ color: var(--btn-text-secondary-color);
     justify-content: center;
 }
 
-.social-media-button {
+.social-media-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,6 +481,11 @@ color: var(--btn-text-secondary-color);
     width: 40px;
     height: 40px;
     cursor: pointer;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    background-color: var(--btn-color);
 }
 
 .social-media-icon {
