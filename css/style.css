@@ -99,7 +99,7 @@ color: var(--bg-color-image);
 margin-right: 76px;
 
 font-family: 'Raleway', sans-serif;
-font-weight: 800;
+font-weight: 800; 
 font-size: 18px;
 line-height: 1.33;
 align-items: center;
@@ -531,8 +531,10 @@ text-decoration: none;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
-    gap: 120px;
+    grid-template: 120px;
+    /* gap: 120px; */
 }
+
 
 .footer-text {
 margin-top: 16px;
@@ -582,6 +584,56 @@ color: var(--btn-text-secondary-color);
     fill: var(--btn-bg-color);
 }
 
+.footer-social-media {
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+/* =============FOOTER SUBSCRIBE  */
+.btn-subscribe {
+    background-color: var(--btn-color);
+    cursor: pointer;
+    width: 165px;
+    height: 40px;
+    margin-left: 24px;
+    transition-property: background, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-delay: 0;
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--btn-text-secondary-color);
+}   
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+    background-color: #404BBF;
+    box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
+0 22.3px 17.9px purple, 0 41.8px 33.4px orange, 0 100px 80px teal;
+}
+
+.subscribe-icon {
+    fill: #FFFFFF;
+}
+
+.email-input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 264px;
+    height: 40px;
+    color: var(--primary-bg-color);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.footer-subscribe {
+    display: flex;
+    margin-top: 16px;
+}
+
+
 /* ===================MODALKA POP UP */
 
 .backdrop {
@@ -594,7 +646,6 @@ color: var(--btn-text-secondary-color);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal {
     position: absolute;
     top: 50%;
@@ -602,7 +653,7 @@ color: var(--btn-text-secondary-color);
     transform: translate(-50%, -50%) scale(1);
 
     min-height: 350px;
-    width: 300px;
+    width: 408px;
     background-color: var(--primary-bg-color);
     border-radius: 5px;
     padding: 24px;
@@ -619,6 +670,7 @@ color: var(--btn-text-secondary-color);
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    margin-bottom: 24px;
 
     width: 24px;
     height: 24px;
@@ -640,4 +692,160 @@ color: var(--btn-text-secondary-color);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+/* =============WNUTRI modalki */
+
+.modal-title {
+margin-bottom: 34px;
+display: block;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var(--title-text-color);
+}
+
+.form-field {
+    position: relative;
+}
+
+.form-field:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 38px;
+    transform: translatey(-50%);
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding-left: 42px;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid var(--btn-text-color);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translate(-40px, -40px);
+    color: #8E8F99;
+}
+
+.form-label {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-delay: 0;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    fill: var(--title-text-color);
+}
+
+.form-input:focus ~ .modal-icon {
+fill: var(--btn-color);
+}
+
+.form-label-textarea {
+    display: flex;
+    margin-bottom: 4px;
+    flex-direction: column;
+    color: #8E8F99;
+}
+
+.textarea {
+    resize: none;
+    width: 360px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+
+.textarea:focus {
+    border-color: var(--btn-color);
+}
+
+/* ===============WNUTRI MODALKI CONSENT */
+.label-consent {
+    display: flex;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+color: #757575;
+padding-left: 24px;
+}
+
+.input-consent {
+appearance: none;
+position: absolute;
+}   
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1.25px solid var(--bg-zagolowok);
+    fill: transparent;
+}
+
+.input-consent:checked + .check {
+    border: none;
+    background-color: var(--btn-text-color);
+    fill: var(--bg-color-image);
+}
+
+
+.policy {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+color: var(--btn-text-color);
+}
+
+
+.btn-send{
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: block;
+
+margin-right: auto;
+margin-left: auto;
+margin-top: 24px;
+
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+color: var(--btn-text-secondary-color);
+background: var(--btn-color);
+cursor: pointer;
+border: none;   
+
+transition-property: background, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-delay: 0;
 }
