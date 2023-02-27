@@ -586,7 +586,7 @@ color: var(--btn-text-secondary-color);
 
 .footer-social-media {
     margin-left: 120px;
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 /* =============FOOTER SUBSCRIBE  */
@@ -605,6 +605,7 @@ color: var(--btn-text-secondary-color);
     justify-content: space-evenly;
     align-items: center;
     color: var(--btn-text-secondary-color);
+    border: none;
 }   
 
 .btn-subscribe:hover,
@@ -621,8 +622,8 @@ color: var(--btn-text-secondary-color);
 .email-input {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 264px;
-    height: 40px;
+    min-width: 264px;
+    min-height: 40px;
     color: var(--primary-bg-color);
     border-radius: 4px;
     padding: 8px 16px;
@@ -666,6 +667,9 @@ color: var(--btn-text-secondary-color);
 }
 
 .modal-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -697,7 +701,7 @@ color: var(--btn-text-secondary-color);
 /* =============WNUTRI modalki */
 
 .modal-title {
-margin-bottom: 34px;
+margin-top: 72px;
 display: block;
 font-weight: 500;
 font-size: 16px;
@@ -705,8 +709,11 @@ line-height: 1.5;
 color: var(--title-text-color);
 }
 
+
+
 .form-field {
     position: relative;
+    margin-top: 34px;
 }
 
 .form-field:not(:last-child) {
@@ -729,6 +736,12 @@ color: var(--title-text-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.04em;
+color: rgba(117, 117, 117, 0.5);
 }
 
 .form-input:hover,
@@ -772,9 +785,16 @@ fill: var(--btn-color);
     resize: none;
     width: 360px;
     height: 120px;
+    padding: 8px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.04em;
+color: rgba(117, 117, 117, 0.5);
 }
 
 .textarea:focus {
@@ -788,7 +808,6 @@ fill: var(--btn-color);
 font-size: 12px;
 line-height: 1.16;
 color: #757575;
-padding-left: 24px;
 }
 
 .input-consent {
