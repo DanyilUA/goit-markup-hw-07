@@ -718,6 +718,7 @@ color: var(--title-text-color);
     position: relative;
 }
 
+
 .form-label {
     position: absolute;
     top: 50%;
@@ -780,8 +781,9 @@ fill: var(--btn-color);
 
 .form-label-textarea {
     position: absolute;
-    top: -8%;
-    transform: translatey(-50%);
+    transform: translatey(-17px);
+
+
 
     color: #8E8F99;
     font-size: 12px;
@@ -845,6 +847,10 @@ font-weight: 400;
 font-size: 12px;
 line-height: 1.16;
 color: var(--btn-text-color);
+}
+
+.consent-field {
+    margin-top: 16px;
 }
 
 .btn-send{
