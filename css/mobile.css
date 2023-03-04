@@ -1,0 +1,48 @@
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 428px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+
+
+    /* ================OUR FEATURES / TEXT STUDIO */
+
+
+
+/* =================WHAT WE ARE DOING */
+.gallery-action { 
+    display: none;
+}
+
+    /* ================OUR TEAM */
+    .gallery > .container {
+        max-width: 296px;
+    }
+/* ============================CUSTOMERS  */
+
+.customer-item {
+    width: calc((100% - 16px) / 2);    
+}
+.customer-link {
+width: 170px;
+}
+
+    /* ======================FOOOOOOOTER */
+
+    .email-input {
+    width: 398px;
+}
+.footer-social-media {
+    margin-bottom: 0;
+}
+
+.header-logo { 
+display: block;
+text-align: center;
+}
+}

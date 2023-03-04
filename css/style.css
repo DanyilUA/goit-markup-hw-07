@@ -65,17 +65,15 @@ p {
     align-items: center;
     margin-right: auto;
 }
-.header .container {
-    display: flex;
+/* .header .container {
     align-items: center;
-}
+} */
 
 .container {
-    /* outline: 2px tomato solid; */
-    max-width: 100%;
-    width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 100%;
+    max-width: 1158px;
+    padding-right: 16px;
+    padding-left: 16px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -96,13 +94,11 @@ color: var(--bg-color-image);
 }
 /* =================logo */
 .header-logo {
-margin-right: 76px;
 
 font-family: 'Raleway', sans-serif;
 font-weight: 800; 
 font-size: 18px;
 line-height: 1.33;
-align-items: center;
 letter-spacing: 0.03em;
 text-decoration: none;
 color: var(--btn-color);
@@ -111,6 +107,7 @@ color: var(--btn-color);
 color:var(--title-text-color);
 }
 .footer-logo-studio {
+
 color: var(--btn-bg-color);    
 }
 /* ==================navigation */
@@ -325,18 +322,21 @@ box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
 }
 /* ================OUR FEATURES / TEXT STUDIO */
 .features {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: var(--primary-bg-color);
 }
 
-.hero-text .hero-list {
-    display: flex;
-    gap: 24px;
+.hero-item > .thumb {
+    display: none;
 }
 
-.hero-list .hero-item {
-    width: 264px;
+.hero-title-description {
+    text-align: center;
+}
+
+.hero-list .hero-item:not(:last-child) {
+margin-bottom: 72px;
 }
 
 .hero-item-text {
@@ -361,14 +361,6 @@ margin-top: 8px;
 }
 
 /* ======================ZAGOLOWOKi */
-.gallery-team {
-font-weight: 700;   
-font-size: 36px;
-line-height: 1.1;
-text-align: center;
-
-text-transform: capitalize;
-}
 .gallery-team-member {
 font-weight: 500;
 font-size: 20px;
@@ -378,7 +370,8 @@ color: var(--title-text-color);
 /* =================WHAT WE ARE DOING */
 .gallery-action {
     padding-bottom: 120px;
-} 
+    display: none;
+}   
 
 .gallery-pics-list {
 display: flex;
@@ -390,16 +383,25 @@ gap: 24px;
 }
 
 /* ===============OUR TEAM  */
+.gallery-team {
+font-weight: 700;   
+font-size: 36px;
+line-height: 1.1;
+text-align: center;
+
+text-transform: capitalize;
+}
+
 .gallery {
     background-color:var(--bg-color-section);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 128px;
 }
 
 .gallery .hero-list-team {
+width: 100%;
 display: flex;
-margin-top: 72px;
-gap: 24px;
+flex-wrap: wrap;
 text-align: center
 }
 .gallery-team-wrap {
@@ -410,9 +412,15 @@ text-align: center
 .gallery .hero-item-text {
     margin-top: 8px;
 }
+.team-item > .img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 .hero-list-team .team-item {
-    width: calc((100% - 3*24px) / 4);
+    margin-top: 72px;
+    width: 100%;
 
     background: var(--bg-color-image);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -484,20 +492,35 @@ text-decoration: none;
 
 /* ====================CUSTOMERS */
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
 }
 .customer-list {
+justify-content: center;
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
     margin-top: 72px;
 }
+.customer-item {
+    display: block;
+    margin-bottom: 72px;
+}
+
+.customer-item:nth-child(5) {
+margin-bottom: 0;
+}
+.customer-item:nth-child(6) {
+margin-bottom: 0;
+}
+
 
 .customer-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
+    width: 138px;
     height: 88px;
     background-color: var(--primary-bg-color);
     border: 1px solid #8E8F99;
@@ -528,27 +551,33 @@ text-decoration: none;
     background-color: var(--bg-zagolowok);
 }
 .footer .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    grid-template: 120px;
-    /* gap: 120px; */
+    padding-top: 96px;
+    padding-bottom: 104px;
 }
+
 
 
 .footer-text {
+    margin-right: auto;
+    margin-left: auto;
 margin-top: 16px;
-max-width: 264px;
+margin-bottom: 72px;
+max-width: 268px;
 font-size: 16px;
 line-height: 1.5;
 color:var(--text-footer-color);
+
 }
+
 .footer-title {
+    
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--btn-text-secondary-color);
+text-align: center;
+margin-bottom: 16px;
 }
 
 .social-media-list {
@@ -584,18 +613,20 @@ color: var(--btn-text-secondary-color);
     fill: var(--btn-bg-color);
 }
 
+
 .footer-social-media {
-    margin-left: 120px;
-    margin-right: auto;
+    margin-bottom: 72px;
 }
 
 /* =============FOOTER SUBSCRIBE  */
 .btn-subscribe {
+    margin-right: auto;
+    margin-left: auto;
+
     background-color: var(--btn-color);
     cursor: pointer;
     width: 165px;
     height: 40px;
-    margin-left: 24px;
 
     display: flex;
     border-radius: 4px;
@@ -609,8 +640,8 @@ color: var(--btn-text-secondary-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     transition-delay: 0;
-
 }   
+
 
 .btn-subscribe:hover,
 .btn-subscribe:focus {
@@ -632,10 +663,12 @@ color: var(--btn-text-secondary-color);
     border-radius: 4px;
     padding: 8px 16px;
 }
-
-.footer-subscribe {
-    display: flex;
-    margin-top: 16px;
+.email-input {
+    display: block;
+    margin-bottom: 16px;
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -883,3 +916,11 @@ transition-delay: 0;
 .btn-send:focus {
 background-color: #404BBF;
 }
+
+/* ===================MEDIA ZAPYT */
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;   
+    }
+
+
+/* ================OUR FEATURES / TEXT STUDIO */
+
+.hero-text .hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.hero-title-description {
+    text-align: left;
+}
+
+.hero-list .hero-item {
+    width: 264px;
+}
+
+    /* ===============WHAT WE ARE DOING  */
+.gallery-action { 
+    display: none;
+}
+    /* ===================our TEAM */
+    .gallery > .container {
+        max-width: 552px;
+    }
+    .hero-list-team {
+        gap: 24px;
+    }
+
+    .hero-list-team:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
+    .hero-list-team .team-item {
+    width: calc((100% - 24px) / 2);
+    }
+
+    /* =============CUSTOMERS  */
+    .customers > .container {
+        max-width: 552px;
+    }
+    
+    .customer-list .customer-item {
+    width: calc((100% - 48px) / 3);
+
+    }
+    .customer-list {
+    gap: 24px;
+    }
+
+    .customer-link {
+        width: 168px;
+    }
+/* =====================FOOOOOOOTER */
+.footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 108px;
+}
+
+
+.footer-subscribe { 
+    display: flex;
+    gap: 24px;
+}
+.footer-title {
+display: block;
+text-align: left;
+}
+    .email-input {
+    width: 264px;
+}
+.header-logo { 
+display: block;
+text-align: left;
+}
+.footer-wrap {
+    margin-right: 24px;
+}
+
+
+}
