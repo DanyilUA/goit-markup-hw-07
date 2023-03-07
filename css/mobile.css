@@ -1,17 +1,14 @@
 @media screen and (min-width: 480px) {
+
     .container {
         max-width: 428px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        
     }
 
-
-
+/* ===============================HEEEEROOOOOOOO */
+.container .main-title {
+    width: 320px;
+}
     /* ================OUR FEATURES / TEXT STUDIO */
-
 
 
 /* =================WHAT WE ARE DOING */
@@ -28,6 +25,7 @@
 .customer-item {
     width: calc((100% - 16px) / 2);    
 }
+
 .customer-link {
 width: 170px;
 }
@@ -38,11 +36,13 @@ width: 170px;
     width: 398px;
 }
 .footer-social-media {
-    margin-bottom: 0;
+    margin-bottom: 72px;
+}
+/* ================MODAL  */
+.modal {
+    width: 392px;
+    height: 586px;
+    
 }
 
-.header-logo { 
-display: block;
-text-align: center;
-}
 }

@@ -20,10 +20,10 @@
     <!-- ==================LOGO====== -->
     <header class="header">
         <div class="container">
-            <!-- <nav class="header-nav">
-            <a class="header-logo" href="./index.html">WEB<span class="header-logo-studio">STUDIO</span></a> -->
+            <nav class="header-nav">
+            <a class="header-logo" href="./index.html">WEB<span class="header-logo-studio">STUDIO</span></a>
             <!-- ======================NAVIGATION -->
-            <!-- <ul class="header-list list">
+            <ul class="header-list list">
                 <li class="header-item">
                     <a href="./index.html" class="header-link link current">Studio</a>
                 </li>
@@ -45,24 +45,95 @@
                     </li>
                 </ul>
             </address>
+            <!-- =================MOBILE MENU BUTTON -->
+            <button type="button" class="menu-btn" data-menu-open>
+                <svg class="menu-icon" width="32" height="22">
+                    <use href="./images/svg/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <!-- =======================MOBILE MENU -->
+        <div class="mob-backdrob is-hidden" data-menu>
+            <div class="mob-menu">
+                <div class="menu-container">
+                    <button type="button" class="menu-close" data-menu-close>
+                        <svg class="modal-close-icon" width="8" height="8">
+                            <use href="./images/svg/sprite.svg#icon-modal-close"></use>
+                        </svg>
+                    </button>
+                    <div>
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-item">
+                                <a href="./index.html" class="mob-menu-link link current">Studio</a>
+                            </li>
+                            <li>
+                                <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="" class="mob-menu-link link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-media">
+                        <address class="mob-menu-address">
+                            <ul class="mob-menu-list list">
+                                <li>
+                                    <a class="mob-menu-tel link" href="tel:+11(000)1111111">+11(000)111-11-11</a>
+                                </li>
+                                <li class="mob-menu-item">
+                                    <a class="mob-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                                
+                            </ul>
+                        </address>
+                    <ul class="mob-social-media-list list">
+                        <li class="mob-social-media-item">
+                            <a class="mob-social-media-link" href="">
+                                <svg class="social-media-icon" width="24" height="24">
+                                    <use href="./images/svg/sprite.svg#icon-inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-social-media-item">
+                            <a class="mob-social-media-link" href="">
+                                <svg class="social-media-icon" width="24" height="24">
+                                    <use href="./images/svg/sprite.svg#icon-twt"></use>
+                                </svg>
+                            </a>
+                        <li class="mob-social-media-item">
+                            <a class="mob-social-media-link" href="">
+                                <svg class="social-media-icon" width="24" height="24">
+                                    <use href="./images/svg/sprite.svg#icon-fb"></use>
+                                </svg>
+                            </a>
+                        <li class="mob-social-media-item">
+                            <a class="mob-social-media-link" href="">
+                                <svg class="social-media-icon" width="24" height="24">
+                                    <use href="./images/svg/sprite.svg#icon-li"></use>
+                                </svg>
+                            </a>
+                    </ul>
+                    </div>
+                </di >
+            </div>
+        </div>
+    </header>
     <main>
         <!-- ================HERO -->
-        <!-- <section class="hero-studio">
+        <section class="hero-studio">
                 <div class="container">
-                    <h1 class="main-title">Effective Solutions for Your Business</h1> -->
+                    <h1 class="main-title">Effective Solutions for Your Business</h1>
                     <!-- =================kmopka glawnaja-->
-                    <!-- <button type="button" class="hero-btn-order btn" data-modal-open>Order Service</button>
+                    <button type="button" class="hero-btn-order btn" data-modal-open>Order Service</button>
                 </div>
-            </section> -->
-                        <!-- =================text -->
+            </section>
+                        <!-- =================text FEATURES-->
         <section class="features">
             <div class="container">
             <h2 class="hero-title">our features</h2>
             <div class="hero-text">
                 <ul class="hero-list list">
-                    <li class="hero-item">
+                    <li class="hero-item">  
                         <div class="thumb">
                                 <svg class="features-icon" width="64" height="64">
                                     <use href="./images/svg/sprite.svg#icon-antenna"></use>
@@ -116,13 +187,16 @@
                     <h2 class="gallery-team">What are we doing</h2>
                     <ul class="gallery-pics-list list">
                         <li class="gallery-pics-item">
-                            <img class="img" src="./images/computer/computer.jpg" alt="computer with charts" width="360">
+                            <img class="img" src="./images/computer/computer.jpg" alt="computer with charts" width="360"
+                            srcset="./images/computer/computer.jpg 1x, ./images/desktop/monitor2x.jpg 2x">
                         </li>
                         <li class="gallery-pics-item">
-                            <img class="img" src="./images/computer/screens.jpg" alt="different screens" width="360">
+                            <img class="img" src="./images/computer/screens.jpg" alt="different screens" width="360"
+                            srcset="./images/computer/screens.jpg 1x, ./images/desktop/screens2x.jpg 2x">
                         </li>
                         <li class="gallery-pics-item">
-                            <img class="img" src="./images/computer/smartphone.jpg" alt="phone and lap top" width="360">
+                            <img class="img" src="./images/computer/smartphone.jpg" alt="phone and lap top" width="360"
+                            srcset="./images/computer/smartphone.jpg 1x, ./images/desktop/phone2x.jpg 2x">
                         </li>
                     </ul>
                 </div>
@@ -133,7 +207,8 @@
                 <h2 class="gallery-team">Our Team</h2>
                 <ul class="hero-list-team list">
                     <li class="team-item">
-                        <img class="img" src="./images/team/mark.jpg" alt="Mark's photo" width="264" height="260">
+                        <img class="img" src="./images/team/mark.jpg" alt="Mark's photo" width="264" height="260"
+                        srcset="./images/team/mark.jpg 1x, ./images/desktop/mark2x.jpg 2x">
                         <div class="gallery-team-wrap">
                             <h3 class="gallery-team-member">Mark Guerrero</h3>
                             <p class="hero-item-text">Product Designer</p>
@@ -169,7 +244,8 @@
                 </div>
                 </li>
                     <li class="team-item">
-                        <img class="img" src="./images/team/tom.jpg" alt="Tom's photo" width="264" height="260">
+                        <img class="img" src="./images/team/tom.jpg" alt="Tom's photo" width="264" height="260"
+                        srcset="./images/team/tom.jpg 1x, ./images/desktop/tom2x.jpg 2x">
                         <div class="gallery-team-wrap">
                             <h3 class="gallery-team-member">Tom Ford</h3>
                             <p class="hero-item-text">Frontend Developer</p>
@@ -206,7 +282,8 @@
             </div>
                     </li>
                     <li class="team-item">
-                        <img class="img" src="./images/team/camila.jpg" alt="Camila's photo" width="264" height="260">
+                        <img class="img" src="./images/team/camila.jpg" alt="Camila's photo" width="264" height="260"
+                        srcset="./images/team/camila.jpg 1x, ./images/desktop/camila2x.jpg 2x">
                         <div class="gallery-team-wrap">
                             <h3 class="gallery-team-member">Camila Garcia</h3>
                             <p class="hero-item-text">Marketing</p>
@@ -240,7 +317,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="img" src="./images/team/daniel.jpg" alt="Daniel's photo" width="264" height="260">
+                        <img class="img" src="./images/team/daniel.jpg" alt="Daniel's photo" width="264" height="260"
+                        srcset="./images/team/daniel.jpg 1x, ./images/desktop/daniel2x.jpg 2x">
                         <div class="gallery-team-wrap">
                             <h3 class="gallery-team-member">Daniel Wilson</h3>
                             <p class="hero-item-text">UI Designer</p>
@@ -386,15 +464,15 @@
     </footer>
 </body>
 <!-- ===========================MODALKA -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/svg/sprite.svg#icon-modal-close"></use>
                 </svg>
-            </button> -->
+            </button>
     <!-- =================modalka forma zapolnienija -->
-            <!-- <form class="form">
+            <form class="form">
                 <b class="modal-title">Leave your contacts and we will call you back</b>
                 <div class="wrapiec">
                     <div class="form-field">
@@ -447,7 +525,8 @@
                 <button type="submit" class="btn-send">Send</button>
             </form>
         </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
