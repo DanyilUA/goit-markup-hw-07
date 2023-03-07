@@ -774,8 +774,8 @@ margin-bottom: 16px;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    min-height: 350px;
-    width: 408px;
+    min-height: 500px;
+    width: 290px;
     background-color: var(--primary-bg-color);
     border-radius: 5px;
     padding:72px 16px 16px 24px;
