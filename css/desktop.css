@@ -17,6 +17,9 @@
 .header-address > .header-list {
 display: flex;
 }
+.header-nav > .header-logo {
+    margin-right: 76px;
+}
 /* ===============================HEEEEROOOOOOOO */
 
 .hero-studio {
@@ -55,15 +58,24 @@ display: flex;
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
+    margin-bottom: 0;
+    
+}
+
+
+.hero-list .hero-item:not(:last-child) {
+    margin-bottom: 0;
 }
 
 .hero-item > .thumb {
     display: flex;
 }
 
-.hero-list .hero-item {
+.hero-list > .hero-item {
     width: 264px;
+    margin-bottom: 0;
 }
+
 
 .hero-item > .hero-title-description {
     margin-top: 8px;
@@ -81,6 +93,7 @@ display: flex;
     .gallery-pics-list {
     margin-top: 72px;
     gap: 24px;
+
     }
 
     .gallery-pics-item {    
@@ -120,6 +133,7 @@ display: flex;
 }
 .footer-text {
     width: 264px;
+    margin-bottom: 0;
 }
 .footer-wrap-subscribe {
     margin-left: 0;
