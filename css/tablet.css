@@ -216,4 +216,20 @@ text-align: left;
     padding:72px 24px 24px 24px;
 }
 
+
+
+
+/* =====================PORTFOLIO  */
+.hero-btn-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.hero-portfolio-list .hero-item {
+    flex-basis: calc(100% / 2 - 24px);
+}
+
 }
